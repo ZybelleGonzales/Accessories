@@ -1,28 +1,142 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#include<iostream> 
+#include<conio.h> 
+using namespace std;
 
-# Precompiled Headers
-*.gch
-*.pch
+int main() 
+{ 
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+    int s; 
+    s = 15 ; 
 
-# Fortran module files
-*.mod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+      cout << "Welcome to Z&A ACCESSORIES!" << endl ; 
+      cout << "\n" << "Products: " << "\n" << "\n" ; cout << "* Bracelets/Watches:" << endl << endl ; 
+      cout << "- DOUBLE WRAP BOW TIE WATCH 797Php" << endl; 
+      cout << " product code: 10001" << endl; 
+      cout << " stocks:" << s << endl; 
+      cout << "- BEADED BRACELET 200Php" << endl; 
+      cout << " product code: 10002" << endl; 
+      cout << " stocks:" << s << endl; 
+      cout << "- PEARL BRACELET 500Php" << endl; 
+      cout << " product code: 10003" << endl; 
+      cout << " stocks:" << s << endl << endl; 
+      
+      
+      cout << "* Earrings:" << endl << endl ; 
+      cout << "- OWL STUD EARRINGS 129Php" << endl; 
+      cout << " product code: 20001" << endl; 
+      cout << " stocks:" << s << endl; 
+      cout << "- TRIBAL EARRINGS 175Php" << endl; 
+      cout << " product code: 20002" << endl; 
+      cout << " stocks:" << s << endl; 
+      cout << "- RAINBOW EARRINGS 150Php" << endl; 
+      cout << " product code: 20003" << endl; 
+      cout << " stocks:" << s << endl << endl ; 
+      
+      
+      cout << "* Necklaces:" << endl << endl ; 
+      cout << "- RETRO NECKLACE 300Php" << endl; 
+      cout << " product code: 30001" << endl; 
+      cout << " stocks:" << s << endl; 
+      cout << "- TRIANGLE DROP NECKLACE 249Php" << endl; 
+      cout << " product code: 30002" << endl; 
+      cout << " stocks:" << s << endl; 
+      cout << "- SQUARE NECKLACE 230Php" << endl; 
+      cout << " product code: 30003" << endl; 
+      cout << " stocks:" << s << endl;
 
-# Executables
-*.exe
-*.out
-*.app
+      int productcode; 
+      cout << "\n" << "Enter product code: " ; 
+      cin >> productcode;
+
+      int price; 
+      
+      if (productcode==10001) 
+      {price = 797 ;} 
+      else if (productcode==10002) 
+      {price = 200 ;} 
+      else if (productcode==10003) 
+      {price = 500 ;} 
+      else if (productcode==20001) 
+      {price = 129 ;} 
+      else if (productcode==20002) 
+      {price = 175 ;} 
+      else if (productcode==20003) 
+      {price = 150 ;} 
+      else if (productcode==30001) 
+      {price = 300 ;} 
+      else if (productcode==30002) 
+      {price = 249 ;} 
+      else if (productcode==30003) 
+      {price = 230 ;} 
+      else 
+      { 
+      cout << "You wrote the wrong product code, please try again" << endl ; 
+      system("PAUSE") ; 
+      return 0; 
+      }
+
+      int quantity; 
+      cout << "Enter quantity: " ; 
+      cin >> quantity; 
+      
+      if (quantity>15) 
+      { 
+      cout << "Entered quantity exceeded. Please try to register again." << endl ; 
+      system("pause") ; 
+      return 0; 
+      }
+
+      int total; 
+      total = quantity * price; 
+      cout << "\n" << "Total amount to be paid: " << total << "Php" << endl << endl ;
+
+      cout << "Cash Inventory: " << endl ; 
+      cout << "1000: " << 10 << endl ; 
+      cout << "500: " << 10 << endl ; 
+      cout << "100: " << 10 << endl ; 
+      cout << "50: " << 10 << endl << endl ;
+
+      int amount; 
+      cout << "Enter Amount: " ; 
+      cin >> amount;
+
+      int dem; 
+      if(total>amount) 
+      {cout << "Amount entered insufficient, please try again" ;} 
+      else
+      {dem = amount - total ; 
+
+
+      int change1 ; 
+      change1 = dem ; 
+
+      int onethousand; 
+      int fivehundred; 
+      int onehundred; 
+      int fifty; 
+      
+      onethousand = dem/1000; 
+      dem = dem%1000; 
+      fivehundred = dem/500; 
+      dem = dem%500; 
+      onehundred = dem/100; 
+      dem = dem%100 ; 
+      fifty = dem/50; 
+      dem = dem%50 ; 
+      
+     cout << "Your change is: " << change1 << "Php" << endl << endl ; c
+     cout << "Updated Cash Inventory: " << endl ; 
+     cout << "1000: " << 10 - onethousand << endl ; 
+     cout << "500: " << 10 - fivehundred << endl ; 
+     cout << "100: " << 10 - onehundred << endl ; 
+     cout << "50: " << 10 - fifty << endl << endl ; 
+     cout << "Thank you for your purchase!!" ;} 
+    
+    
+    
+     getch() ; 
+     return 0; 
+     
+     
+     }
