@@ -10,7 +10,8 @@ int main()
 
 
       cout << "Welcome to Z&A ACCESSORIES!" << endl ; 
-      cout << "\n" << "Products: " << "\n" << "\n" ; cout << "* Bracelets/Watches:" << endl << endl ; 
+      cout << "\n" << "Products: " << "\n" << "\n" ; 
+      cout << "* Bracelets/Watches:" << endl << endl ; 
       cout << "- DOUBLE WRAP BOW TIE WATCH 797Php" << endl; 
       cout << " product code: 10001" << endl; 
       cout << " stocks:" << s << endl; 
@@ -85,7 +86,7 @@ int main()
       cout << "Entered quantity exceeded. Please try to register again." << endl ; 
       system("pause") ; 
       return 0; 
-      }
+     }
 
       int total; 
       total = quantity * price; 
@@ -106,8 +107,6 @@ int main()
       {cout << "Amount entered insufficient, please try again" ;} 
       else
       {dem = amount - total ; 
-
-
       int change1 ; 
       change1 = dem ; 
 
@@ -125,13 +124,13 @@ int main()
       fifty = dem/50; 
       dem = dem%50 ; 
       
-     cout << "Your change is: " << change1 << "Php" << endl << endl ; c
-     cout << "Updated Cash Inventory: " << endl ; 
-     cout << "1000: " << 10 - onethousand << endl ; 
-     cout << "500: " << 10 - fivehundred << endl ; 
-     cout << "100: " << 10 - onehundred << endl ; 
-     cout << "50: " << 10 - fifty << endl << endl ; 
-     cout << "Thank you for your purchase!!" ;} 
+      cout << "Your change is: " << change1 << "Php" << endl << endl ; c
+      cout << "Updated Cash Inventory: " << endl ; 
+      cout << "1000: " << 10 - onethousand << endl ; 
+      cout << "500: " << 10 - fivehundred << endl ; 
+      cout << "100: " << 10 - onehundred << endl ; 
+      cout << "50: " << 10 - fifty << endl << endl ; 
+      cout << "Thank you for your purchase!!" ;} 
     
     
     
